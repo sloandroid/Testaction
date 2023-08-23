@@ -1,0 +1,1 @@
+Invoke-Command -ComputerName srv -ScriptBlock {Start-Process msiexec.exe -ArgumentList '/package "c:\Temp\PowerShell-7.3.1-win-x64.msi" /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1' -Wait}
